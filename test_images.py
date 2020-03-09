@@ -40,6 +40,9 @@ def logger_init():
     logging.basicConfig(level=logging.INFO)
 
     logfile = 'logs/{}_{}.log'.format(time_stamp, config.LOG_DIR)
+    with open(logfile, 'w') as fh:
+        print("Created")
+
     fh = logging.FileHandler(logfile, mode='w')
     formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
     fh.setFormatter(formatter)
