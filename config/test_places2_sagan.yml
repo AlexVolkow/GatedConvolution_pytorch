@@ -85,7 +85,7 @@ DATA_FLIST:
   ]
   # http://places2.csail.mit.edu/, please download the high-resolution dataset and use RANDOM_CROP: True
   places2: [
-    '/home/lhy/datasets/InpaintBenchmark/test_show_img_flist.txt'
+    'InpaintBenchmark/test_show_img_flist.txt'
   ]
   # http://www.image-net.org/, please use RANDOM_CROP: True
   imagenet: [
