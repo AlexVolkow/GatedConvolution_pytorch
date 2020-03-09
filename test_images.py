@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -40,8 +42,9 @@ def logger_init():
     logging.basicConfig(level=logging.INFO)
 
     logfile = 'logs/{}_{}.log'.format(time_stamp, config.LOG_DIR)
-    with open(logfile, 'w') as fh:
-        print("Created")
+    folder_path = Path(os.getcwd() + os.path.join(logfile))  # define folder structure
+    if not os.path.exists(folder_path):  # create folders if not exists
+        os.makedirs(folder_path)
 
     fh = logging.FileHandler(logfile, mode='w')
     formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
