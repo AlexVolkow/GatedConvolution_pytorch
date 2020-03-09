@@ -43,8 +43,8 @@ def logger_init():
 
     logfile = 'logs/{}_{}.log'.format(time_stamp, config.LOG_DIR)
     logfile = os.path.join(".", logfile)
-    if not os.path.exists(logfile):  # create folders if not exists
-        os.makedirs(logfile)
+    if not os.path.exists(".logs"):  # create folders if not exists
+        os.makedirs(".logs")
 
     fh = logging.FileHandler(logfile, mode='w')
     formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
