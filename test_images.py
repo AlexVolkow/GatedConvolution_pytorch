@@ -87,6 +87,8 @@ def validate(nets, loss_terms, opts, dataloader, epoch, network_type, devices=(c
     info = {}
     t = 0
     for i, (ori_imgs, ori_masks) in enumerate(dataloader):
+        logger.info("Start processing " + str(i))
+
         data_time.update(time.time() - end)
         pre_imgs = ori_imgs
         pre_complete_imgs = (pre_imgs / 127.5 - 1)

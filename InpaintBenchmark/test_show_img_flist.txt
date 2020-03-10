@@ -1,10 +1,1 @@
 /home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/1.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/2.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/3.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/4.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/5.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/6.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/7.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/8.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/9.png
-/home/ntorgashov/amvolkov/GatedConvolution_pytorch/TestShowImages/10.png
