@@ -182,7 +182,7 @@ def main():
     logger.info("Initialize the dataset...")
     print(dataset_type)
     print(config.DATA_FLIST[dataset_type])
-    val_dataset = InpaintDataset(config.DATA_FLIST[dataset_type][0],\
+    val_dataset = InpaintDataset(config.DATA_FLIST[dataset_type][1],\
                                     {mask_type:config.DATA_FLIST[config.MASKDATASET][mask_type][1] for mask_type in ('val',)}, \
                                     resize_shape=tuple(config.IMG_SHAPES), random_bbox_shape=config.RANDOM_BBOX_SHAPE, \
                                     random_bbox_margin=config.RANDOM_BBOX_MARGIN,
