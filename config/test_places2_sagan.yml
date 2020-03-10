@@ -29,11 +29,11 @@ MAXANGLE: 4.0 #pi
 MAXLENGTH: 40
 MAXBRUSHWIDTH: 10
 RANDOM_FF_SETTING:
-    img_shape: [256,256]
-    mv: 6
-    ma: 4.0
-    ml: 40
-    mbw: 10
+  img_shape: [256,256]
+  mv: 6
+  ma: 4.0
+  ml: 40
+  mbw: 10
 
 # training
 NUM_GPUS: 1
@@ -85,7 +85,7 @@ DATA_FLIST:
   ]
   # http://places2.csail.mit.edu/, please download the high-resolution dataset and use RANDOM_CROP: True
   places2: [
-    'InpaintBenchmark/test_show_img_flist.txt'
+    'InpaintBenchmark/test_show_img_flist.txt',
     'InpaintBenchmark/val_img_flist.txt'
   ]
   # http://www.image-net.org/, please use RANDOM_CROP: True
@@ -94,27 +94,27 @@ DATA_FLIST:
     'data/imagenet/validation_static_view.flist',
   ]
   irrmask:
-      random_free_form:
-          [
-            'InpaintBenchmark/MaskData/val_ff_mask_flist.txt',
-            'InpaintBenchmark/MaskData/val_ff_mask_flist.txt'
-          ]
-      val:
-          [
-            'InpaintBenchmark/MaskData/val_ff_mask_flist.txt',
-            'InpaintBenchmark/MaskData/val_ff_mask_flist.txt'
-          ]
+    random_free_form:
+      [
+        'InpaintBenchmark/MaskData/val_ff_mask_flist.txt',
+        'InpaintBenchmark/MaskData/val_ff_mask_flist.txt'
+      ]
+    val:
+      [
+        'InpaintBenchmark/MaskData/val_ff_mask_flist.txt',
+        'InpaintBenchmark/MaskData/val_ff_mask_flist.txt'
+      ]
   rectmask:
-      random:
-          [
-            'InpaintBenchmark/MaskData/val_rect_mask_flist.txt',
-            'InpaintBenchmark/MaskData/val_rect_mask_flist.txt'
-          ]
-      val:
-          [
-            'InpaintBenchmark/MaskData/val_rect_mask_flist.txt',
-            'InpaintBenchmark/MaskData/val_rect_mask_flist.txt'
-          ]
+    random:
+      [
+        'InpaintBenchmark/MaskData/val_rect_mask_flist.txt',
+        'InpaintBenchmark/MaskData/val_rect_mask_flist.txt'
+      ]
+    val:
+      [
+        'InpaintBenchmark/MaskData/val_rect_mask_flist.txt',
+        'InpaintBenchmark/MaskData/val_rect_mask_flist.txt'
+      ]
   horse: [
     '/unsullied/sharefs/linhangyu/Inpainting/Data/VOCData/voc_horse_train_flist.txt',
     '/unsullied/sharefs/linhangyu/Inpainting/Data/VOCData/voc_horse_val_flist.txt'
