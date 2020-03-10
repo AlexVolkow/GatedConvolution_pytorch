@@ -86,6 +86,7 @@ def validate(nets, loss_terms, opts, dataloader, epoch, network_type, devices=(c
             os.makedirs(os.path.join(val_save_comp_dir, size))
     info = {}
     t = 0
+    logger.info("Try iterate")
     for i, (ori_imgs, ori_masks) in enumerate(dataloader):
         logger.info("Start processing " + str(i))
 
@@ -188,7 +189,7 @@ def main():
                                     random_ff_setting=config.RANDOM_FF_SETTING)
     val_loader = val_dataset.loader(batch_size=1, shuffle=False,
                                         num_workers=1)
-    #print(len(val_loader))
+    print(len(val_loader))
 
     ### Generate a new val data
 
